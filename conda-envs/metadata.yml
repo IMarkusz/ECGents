@@ -1,0 +1,20 @@
+---
+name: metadata
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - python
+  - ipykernel
+  - xmltodict
+  - pandas
+  - numpy=1.19
+  - tabulate
+  - tqdm
+  - matplotlib
+  - seaborn
+  - plotly
+  - pillow
+  - pywavelets
+  - pip:
+      - scaleogram
