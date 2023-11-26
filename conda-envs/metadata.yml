@@ -3,6 +3,8 @@ name: metadata
 channels:
   - bioconda
   - conda-forge
+  - pytorch
+  - nvidia
 dependencies:
   - python
   - ipykernel
@@ -16,5 +18,9 @@ dependencies:
   - plotly
   - pillow
   - pywavelets
+  - scikit-learn
+  - scipy
+  - pytorch
+  - torchvision
   - pip:
       - scaleogram
