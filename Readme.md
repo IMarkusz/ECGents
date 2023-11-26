@@ -1,6 +1,6 @@
 # ECG Analyzer
 
-This is a proof of concept algorithm for quick asessment of whether a patient needs medical care or even specialized cardiological treatment. The program only requires short (~10 beat) ECG signals, as such it can aid decision making in the earliest stages of diagnosis (e.g. ambulance car), alleviating the need for a cardiologist for every case. Without serious optimizitaion this method achieves up to 89.4% precision for predictions where no further medical care is required. The use of such a program could greatly reduce the number of unnecessary medical examinations, saving time and money for both the patients and the medical professionals.
+This is a proof of concept algorithm for quick asessment of whether a patient needs medical care or even specialized cardiological treatment. The program only requires short (~10 beat) ECG signals, as such it can aid decision making in the earliest stages of diagnosis (e.g. ambulance car), alleviating the need for a cardiologist for every case. Without serious optimizitaion this method achieves up to **89.4%** precision for predictions where no further medical care is required. The use of such a program could greatly reduce the number of unnecessary medical examinations, saving time and money for both the patients and the medical professionals.
 
 ## Architecture
 
