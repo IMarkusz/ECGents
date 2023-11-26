@@ -10,7 +10,7 @@ The algorithm processes the ECG signal through the following steps:
 3. The image is fed to a pre-trained deep convolutional neural network that infers the dominant features of the sample.
 4. The AI suggests the optimal course of action based on the features: whether the patient needs further medical attention and if the patient should immediately be taken to a cardiology clinic.
 
-## VISUAL ABSTRACT HERE
+![Visual abstract](./visual_abstract_with_embedding_2liner.png "Visual abstract")
 
 ## Further directions, possible improvements
 
