@@ -8,10 +8,24 @@ The algorithm processes the ECG signal through the following steps:
 1. A short ECG sample is recorded and provided to the algorithm.
 2. The AI transforms the signal to an image via a continous wavelet transform using the morlet or mexican hat type family.
 3. The image is fed to a pre-trained deep convolutional neural network that infers the dominant features of the sample.
-4. The AI suggests the optimal course of action based on the features: whether the patient needs further medical attention and if the patient should immediately be taken to a cardiology clinic.
+4. The morphology of the ECG signal is asessed in the high dimensional embedded feature space.
+5. The AI suggests the optimal course of action based on the features: whether the patient needs further medical attention and if the patient should immediately be taken to a cardiology clinic.
 
 ![Visual abstract](./visual_abstract_with_embedding_2liner.png "Visual abstract")
 
+## Statistics
+
+Here are the performance metrics on the data received from the 2023 European Healthcare Hackathon.
+
+"Best" metrics:
+
+"Best outpatient precision" metrics:
+
+10-fold cross validated metrics for patients under the age of 50:
+
+10-fold cross validated metrics for all patients:
+
 ## Further directions, possible improvements
 
-This is only a proof of concept solution, which was succesful in showing how wavelet transforms and deep learning can be used to asess the morphology of an ECG signal. With a little post processing based on this asessment, relevant predictions can be provided regarding a patients need for medical care. However, there are many further directions where such an algorithm could be optimized, some   
+This is only a proof of concept solution, which was succesful in showing how wavelet transforms and deep learning can be used to asess the morphology of an ECG signal. With a little post processing based on this asessment, relevant predictions can be provided regarding a patients need for medical care. However, there are many further directions where such an algorithm could be optimized, some of which we list below:
+
