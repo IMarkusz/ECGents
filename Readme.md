@@ -30,7 +30,7 @@ Here are the performance metrics on the data received from the 2023 European Hea
 ![10-fold cross-validation on all patients](./mean_perf.png "10-fold cross-validation on all patients")
 
 Train performance:
-![Train performance](./train_performance.png "Train performance")
+![Train performance](./train_preformance.png "Train performance")
 
 
 ## Further directions, possible improvements
