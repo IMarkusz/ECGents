@@ -41,4 +41,5 @@ Train performance:
 ## Further directions, possible improvements
 
 This is only a proof of concept solution, which was succesful in showing how wavelet transforms and deep learning can be used to asess the morphology of an ECG signal. With a little post processing based on this asessment, relevant predictions can be provided regarding a patients need for medical care. However, there are many further directions where such an algorithm could be optimized, some of which we list below:
+1. **Specialized neural network.**  
 
