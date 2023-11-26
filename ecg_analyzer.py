@@ -1,4 +1,6 @@
 import pickle
+import numpy as np
+import torch
 
 from sklearn.decomposition import PCA
 from sklearn.neighbors import KNeighborsClassifier
@@ -14,9 +16,19 @@ label2code = {"cardiology clinic": 0, "other": 1, "outpatient": 2}
 
 def analyze(path):
     model = AlexNetModel()
+    model.eval()
     with open("models/pca.pickle", "rb") as f:
         pca = pickle.load(f)
     with open("models/knn.pickle", "rb") as f:
         knn = pickle.load(f)
 
-    wavelets = ecgxml_to_wavelet
+    wavelets = ecgxml_to_wavelet(path)
+    wavelets = torch.from_numpy(np.stack(wavelets))
+
+    with torch.no_grad():
+        embedding = model(wavelets.unsqueeze(0))
+
+    embedding = pca.transform(embedding.numpy())
+    pred = knn.predict(embedding)[0]
+
+    return code2label[pred]
