@@ -18,18 +18,23 @@ The algorithm processes the ECG signal through the following steps:
 Here are the performance metrics on the data received from the 2023 European Healthcare Hackathon.
 
 "Best" metrics:
+
 ![Best metrics](./best_performance.png "Best metrics")
 
 "Best outpatient precision" metrics:
+
 ![Best outpatient precision](./best_outp_perf.png "Best outpatient precision")
 
 10-fold cross validated metrics for patients under the age of 50:
+
 ![10-fold cross-validation under the age of 50](./mean_perf_under_50.png "10-fold cross-validation under the age of 50")
 
 10-fold cross validated metrics for all patients:
+
 ![10-fold cross-validation on all patients](./mean_perf.png "10-fold cross-validation on all patients")
 
 Train performance:
+
 ![Train performance](./train_preformance.png "Train performance")
 
 
